@@ -19,25 +19,25 @@ const cambiodepropiedadesradio =  () => {
     return `${radiopar}px`;
 }
 const cambiodepropiedadessombra =  () => {
-    return `(10px, 10px, ${sombrapar})`;
+    return `(10px, 10px, ${sominput})`;
 }
 
-inputAlto.addEventListener('change', (al) => {
+inputAlto.addEventListener('input', (al) => {
     altopar=al.target.value;
 
     figure.style.height = cambiodepropiedadesalto();
 })
-inputAncho.addEventListener('change', (an) => {
+inputAncho.addEventListener('input', (an) => {
     anchopar=an.target.value;
 
     figure.style.width = cambiodepropiedadesancho();
 })
-inputRadio.addEventListener('change', (ra) => {
+inputRadio.addEventListener('input', (ra) => {
     radiopar=ra.target.value;
 
     figure.style.borderRadius = cambiodepropiedadesradio();
 })
-inputSombra.addEventListener('change', (so) => {
+inputSombra.addEventListener('input', (so) => {
     sombrapar = so.target.value;
 
     figure.style.boxShadow = cambiodepropiedadessombra();
